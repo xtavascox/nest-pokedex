@@ -1,4 +1,9 @@
-import { Module } from '@nestjs/common';
+import { Module } from "@nestjs/common";
+import { AxiosAdapter } from "./adapters/axios.adapter";
 
-@Module({})
-export class CommonsModule {}
+@Module({
+  providers: [AxiosAdapter],
+  exports: [AxiosAdapter]
+})
+export class CommonsModule {
+}

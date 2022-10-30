@@ -17,7 +17,16 @@
    ```
    docker-compose up -d
    ```
-   
+5. Clonar el achivo __.env.template__ y renombrar a __.env__
+6. Llenar las variables de entorno en __.env__
+   7. Ejectutar la aplicacion en dev: 
+   ```
+   7. yarn start:dev
+   ```
+8.Reconstruir la base de datos con la semilla
+      ```
+      localhost:3000/api/v2/seed
+      ```
 
 ## Stack usado
 * MongoDB
